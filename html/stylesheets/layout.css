@@ -8,8 +8,8 @@ body {
   width:970px;
   height:32px;
   margin:10px auto 20px;
-  border:5px solid rgba(51,51,51,0.3);
-  background-color:rgba(255,255,255,0.1);
+  border:5px solid rgba(255,255,255,0.2);
+  background-color:rgba(0,0,255,0.2);
 }
 
 #header #logo {
@@ -29,23 +29,25 @@ body {
 
 #wrapper {
   width:980px;
-  margin:10px auto;
+  margin:0 auto 20px;
 }
 
 #left-column {
-  width:300px;
+  width:240px;
+  min-height:900px;
+  border:5px solid #ddd;
   float:left;
+  position:relative;
+}
+
+#left-column:hover {
+  z-index:2;
 }
 
 #right-column {
-  width:700px;
+  width:730px;
   min-height:900px;
-  margin-right:-40px;
-  border:10px solid rgba(0,0,0,0.3);
   float:left;
-  position:relative;
-  left:-40px;
-  background:rgba(255,255,255,0.3);
 }
 
 #bread-crumb {
@@ -64,12 +66,39 @@ body {
 }
 
 #sidebar {
-  min-height:900px;
-  border:10px solid rgba(255,255,255,0.5);
 }
 
+#msg {
+  height:30px;
+  padding-left:10px;
+}
+
+#content {
+  margin-right:-25px;
+  background:url(../images/bglines.png);
+  border:5px solid #ddd;
+  position:relative;
+  left:-25px;
+  z-index:1;
+}
+
+#article {
+  min-height:860px;
+  border:20px solid rgba(0,255,255,0.1);
+}
+
+#article h2 {
+  margin:0 20px;
+  background-color:#abc;
+  font-size:24px;
+  color:blue;
+  border-bottom:1px dashed #000;
+}
+
+
+
 #footer {
-  height:100px; 
+  height:45px; 
   border-top:5px solid rgba(0,0,0,0.3);
   background:rgba(0,0,0,0.3);
 }
