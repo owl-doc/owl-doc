@@ -1,75 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>猫头鹰文档 | 致力于互联网技术的传播和发展……</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+<title>猫头鹰文档 | 致力于互联网技术的传播和发展。</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta http-equiv="Content-Language" content="zh-CN" />
-<style>
-* {
-  margin:0;
-  padding:0;
-  color:#333;
-  border:0;
-  font-weight:normal;
-}
-
-
-body {
-  background:url(bglines.png);
-  font-size:12px;
-  line-height:1.5;
-}
-
-#header {
-  width:980px;
-  height:36px;
-  margin:5px auto;
-  background-color:rgba(255,255,255,0.3);
-}
-
-#header h1 {
-  font-size:24px;
-  line-height:30px;
-  height:30px;
-  padding:0 2px;
-  float:left;
-}
-
-#wrapper {
-  width:1000px;
-  height:600px;
-  background:rgba(0,0,0,0.3);
-  margin:20px auto;
-}
-
-#sidebar {
-  width:380px;
-  height:500px; 
-  background:rgba(255,255,255,0.3);
-  float:left;
-}
-
-#main {
-  width:620px;
-  background:rgba(0,0,0,0.3);
-  height:500px;
-  float:left;
-}
-
-</style>
+<link rel="stylesheet" href="stylesheets/resetandbase.css" />
+<link rel="stylesheet" href="stylesheets/layout.css" />
+<link rel="stylesheet" href="stylesheets/classes.css" />
+<script>
+  window.onload=function(){
+    var rightColumn = document.getElementById("right-column");
+    alert(rightColumn.style.height);
+  }
+</script>
 </head>
 <body>
-  <div id="header">
-    <h1>{猫头鹰文档}</h1>
-  </div>
+  <header id="header">
+    <h1 id="logo"><a href="/">｛猫头鹰文档｝</a></h1>
+  </header>
   <div id="wrapper">
-    <div id="sidebar">
+    <div id="left-column">
+      <ul id="bread-crumb">
+        <li><a href="/">主页</a><span class="sign">&#187;</span></li>
+        <li><a href="/">HTML5</a><span class="sign">&#187;</span></li>
+        <li><span>标签</span></li>
+      </ul>
+      <ul id="sidebar">
+      </ul>
     </div>
-    <div id="main">
+    <div id="right-column">
+      <article>
+      </article>
     </div>
     <div style="clear:both;"></div>
   </div>
-  <div id="footer">
-  </div>
+  <footer id="footer">
+  </footer>
 </body>
 </html>

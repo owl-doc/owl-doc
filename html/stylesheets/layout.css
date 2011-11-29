@@ -1,0 +1,75 @@
+body {
+  font:12px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  line-height:1.5;
+  background:url(../images/bglines.png);
+}
+
+#header {
+  width:970px;
+  height:32px;
+  margin:10px auto 20px;
+  border:5px solid rgba(51,51,51,0.3);
+  background-color:rgba(255,255,255,0.1);
+}
+
+#header #logo {
+  float:left;
+}
+
+#header #logo a {
+  display:block;
+  font-size:24px;
+  line-height:32px;
+  color:#333;
+}
+
+#header #logo a:hover {
+  background-color:rgba(255,0,0,0.3);
+}
+
+#wrapper {
+  width:980px;
+  margin:10px auto;
+}
+
+#left-column {
+  width:300px;
+  float:left;
+}
+
+#right-column {
+  width:700px;
+  min-height:900px;
+  margin-right:-40px;
+  border:10px solid rgba(0,0,0,0.3);
+  float:left;
+  position:relative;
+  left:-40px;
+  background:rgba(255,255,255,0.3);
+}
+
+#bread-crumb {
+  height:18px;
+  margin:10px;
+  list-style:none;
+  vertical-align:bottom;
+}
+
+#bread-crumb li {
+  float:left;
+}
+
+#bread-crumb .sign {
+  margin:0 10px;
+}
+
+#sidebar {
+  min-height:900px;
+  border:10px solid rgba(255,255,255,0.5);
+}
+
+#footer {
+  height:100px; 
+  border-top:5px solid rgba(0,0,0,0.3);
+  background:rgba(0,0,0,0.3);
+}
