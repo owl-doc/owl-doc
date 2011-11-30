@@ -17,10 +17,12 @@ body {
 }
 
 #header #logo a {
+  padding-left:30px;
   display:block;
   font-size:24px;
   line-height:32px;
   color:#333;
+  background:url(../images/logo.png) no-repeat -5px center;
 }
 
 #header #logo a:hover {
@@ -38,6 +40,7 @@ body {
   border:5px solid #ddd;
   float:left;
   position:relative;
+  background:url(../images/bglines.png);
 }
 
 #left-column:hover {
@@ -51,8 +54,8 @@ body {
 }
 
 #bread-crumb {
-  height:18px;
-  margin:10px;
+  height:25px;
+  border-bottom:5px solid #;
   list-style:none;
   vertical-align:bottom;
 }
