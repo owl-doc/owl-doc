@@ -35,12 +35,11 @@ body {
 }
 
 #left-column {
-  width:240px;
+  width:250px;
   min-height:900px;
-  border:5px solid #ddd;
   float:left;
   position:relative;
-  background:url(../images/bglines.png);
+  background:url(../images/aside_bg.png);
 }
 
 #left-column:hover {
@@ -78,8 +77,7 @@ body {
 
 #content {
   margin-right:-25px;
-  background:url(../images/bglines.png);
-  border:5px solid #ddd;
+  background-color:#fff;
   position:relative;
   left:-25px;
   z-index:1;
@@ -87,7 +85,7 @@ body {
 
 #article {
   min-height:860px;
-  border:20px solid rgba(0,255,255,0.1);
+  padding:20px;
 }
 
 #article h2 {
