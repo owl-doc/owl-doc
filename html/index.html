@@ -7,16 +7,83 @@
 <link rel="stylesheet" href="stylesheets/resetandbase.css" />
 <link rel="stylesheet" href="stylesheets/layout.css" />
 <link rel="stylesheet" href="stylesheets/classes.css" />
+<script type="text/javascript" src="javascript/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $("#left-column");
+});
+</script>
 </head>
-<body>
+<body id="index">
   <div id="header">
     <h1 id="logo"><a href="/">猫头鹰文档</a></h1>
+    <div id="search">
+      <form target="#" method="post">
+        <input class="search-box" type="text" value="请输入关键词"/>
+        <input class="search-btn" type="submit" value="搜索">
+      </form>
+    </div>
     <ul id="top-menu">
-      <li><a href="/">前端</a></li>
-      <li><a href="/">服务器端</a></li>
-      <li><a href="/">linux</a></li>
-      <li><a href="/">windows</a></li>
-      <li><a href="/">其他</a></li>
+      <li class="front"><a href="/">前端</a>
+        <ul class="submenu">
+          <li><a href="#" >HTML5</a></li>
+          <li><a href="#" >CSS3</a></li>
+          <li><a href="#" >Javascript</a></li>
+          <li><a href="#" >XHTML</a></li>
+          <li><a href="#" >jQuery</a></li>
+          <li><a href="#" >CSS2</a></li>
+          <li><a href="#" >HTML4</a></li>
+          <li><a href="#" >YUI</a></li>
+        </ul> 
+      </li>
+      <li class="server"><a href="/">服务器端</a>
+        <ul class="submenu">
+          <li><a href="#" >HTML5</a></li>
+          <li><a href="#" >CSS3</a></li>
+          <li><a href="#" >Javascript</a></li>
+          <li><a href="#" >XHTML</a></li>
+          <li><a href="#" >jQuery</a></li>
+          <li><a href="#" >CSS2</a></li>
+          <li><a href="#" >HTML4</a></li>
+          <li><a href="#" >YUI</a></li>
+        </ul> 
+      </li>
+      <li class="linux"><a href="/">linux</a>
+        <ul class="submenu">
+          <li><a href="#" >HTML5</a></li>
+          <li><a href="#" >CSS3</a></li>
+          <li><a href="#" >Javascript</a></li>
+          <li><a href="#" >XHTML</a></li>
+          <li><a href="#" >jQuery</a></li>
+          <li><a href="#" >CSS2</a></li>
+          <li><a href="#" >HTML4</a></li>
+          <li><a href="#" >YUI</a></li>
+        </ul> 
+      </li>
+      <li class="windows"><a href="/">windows</a>
+        <ul class="submenu">
+          <li><a href="#" >HTML5</a></li>
+          <li><a href="#" >CSS3</a></li>
+          <li><a href="#" >Javascript</a></li>
+          <li><a href="#" >XHTML</a></li>
+          <li><a href="#" >jQuery</a></li>
+          <li><a href="#" >CSS2</a></li>
+          <li><a href="#" >HTML4</a></li>
+          <li><a href="#" >YUI</a></li>
+        </ul> 
+      </li>
+      <li class="others"><a href="/">其他</a>
+        <ul class="submenu">
+          <li><a href="#" >HTML5</a></li>
+          <li><a href="#" >CSS3</a></li>
+          <li><a href="#" >Javascript</a></li>
+          <li><a href="#" >XHTML</a></li>
+          <li><a href="#" >jQuery</a></li>
+          <li><a href="#" >CSS2</a></li>
+          <li><a href="#" >HTML4</a></li>
+          <li><a href="#" >YUI</a></li>
+        </ul> 
+      </li>
     </ul>
   </div>
 
