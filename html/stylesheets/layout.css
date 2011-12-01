@@ -5,11 +5,14 @@ body {
 }
 
 #header {
-  width:970px;
+  width:90%;
+  min-width:980px;
   height:32px;
   margin:10px auto 20px;
-  border:5px solid rgba(255,255,255,0.2);
-  background-color:rgba(0,0,255,0.2);
+  border:8px solid transparent;
+  box-shadow:0 0 8px rgba(0,0,0,0.2);
+  background-clip:padding-box;
+  background-color:rgba(0,0,0,0.1);
 }
 
 #header #logo {
@@ -18,6 +21,7 @@ body {
 
 #header #logo a {
   padding-left:30px;
+  padding-right:10px;
   display:block;
   font-size:24px;
   line-height:32px;
@@ -29,58 +33,89 @@ body {
   background-color:rgba(255,0,0,0.3);
 }
 
+#top-menu {
+  width:50%;
+  float:right;
+  list-style:none;
+}
+
+#top-menu li{
+  width:20%;
+  float:left;
+  font-size:18px;
+  line-height:32px;
+}
+
+#top-menu  li a {
+  display:block;
+  text-align:center;
+  vertical-align:bottom;
+}
+
+#top-menu li:hover {
+  background-color:#abc;
+}
+
+
+
+
+
 #wrapper {
-  width:980px;
+  width:90%;
+  min-width:980px;
   margin:0 auto 20px;
 }
 
 #left-column {
-  width:250px;
+  width:25%;
+  margin:0 -8px;
   min-height:900px;
+  background-image:url(../images/aside_bg.png);
+  border:8px solid transparent;
+  box-shadow:0 0 8px rgba(0,0,0,0.15);
+  background-clip:padding-box;
   float:left;
-  position:relative;
-  background:url(../images/aside_bg.png);
-}
-
-#left-column:hover {
-  z-index:2;
 }
 
 #right-column {
-  width:730px;
+  width:75%;
   min-height:900px;
+  margin-right:-5px;
   float:left;
-}
-
-#bread-crumb {
-  height:25px;
-  border-bottom:5px solid #;
-  list-style:none;
-  vertical-align:bottom;
-}
-
-#bread-crumb li {
-  float:left;
-}
-
-#bread-crumb .sign {
-  margin:0 10px;
 }
 
 #sidebar {
 }
 
 #msg {
-  height:30px;
-  padding-left:10px;
+  height:26px;
+  margin:8px 0 16px 24px;
+  box-shadow:0 0 8px rgba(0,0,255,0.2);
+}
+
+#bread-crumb {
+  list-style:none;
+  float:left;
+}
+
+#bread-crumb li {
+  float:left;
+  font-size:16px;
+  line-height:26px;
+}
+
+#bread-crumb .sign {
+  margin:0 10px;
 }
 
 #content {
-  margin-right:-25px;
+  width:100%;
+  margin:0 -8px 0 -48px;
+  padding:0 20px;
   background-color:#fff;
-  position:relative;
-  left:-25px;
-  z-index:1;
+  border:8px solid transparent;
+  box-shadow:0 0 8px rgba(0,0,0,0.2);
+  background-clip:padding-box;
 }
 
 #article {
