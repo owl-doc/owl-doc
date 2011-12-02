@@ -17,9 +17,13 @@ body {
   min-width:980px;
   height:32px;
   margin:10px auto 20px;
-  border:8px solid transparent;
-  background-clip:padding-box;
+  border:1px solid rgba(255,255,255,0.5);
+  border-radius:8px;
+  padding:7px;
+  background-clip:content-box;
   background-color:rgba(0,0,255,0.1);
+  position:relative;
+  z-index:2;
 }
 
 
@@ -80,14 +84,18 @@ body {
 }
 
 #top-menu li .submenu {
-  border-top:8px solid transparent;
+  border:8px solid transparent;
   list-style:none;
   display:none;
   width:300%;
   position:absolute;
   top:32px;
+  border-radius:0 0 8px 8px;
   margin-left:-100%;
-  background-image:url(../images/bglines.png);
+  background-clip:padding-box;
+  background-image:url();
+  box-shadow:-4px 4px 8px -4px rgba(239,121,1,0.5),4px 4px 8px -4px rgba(239,121,1,0.5);
+
 }
 
 #top-menu li:hover .submenu {
@@ -97,6 +105,7 @@ body {
 #top-menu li .submenu li {
   width:33.3%;
   float:left;
+  background-color:rgba(0,0,255,0.3);
 }
 
 #top-menu li.front > a {
@@ -120,23 +129,23 @@ body {
 }
 
 #top-menu li.front:hover > a {
-  box-shadow:inset 0 0 8px rgba(213,68,33,0.3);
+  box-shadow:inset 0 0 8px rgba(213,68,33,0.5);
 }
 
-#top-menu li.server > a:hover {
-  text-shadow:1px 1px 1px rgba(152,191,13,0.3);
+#top-menu li.server:hover > a {
+  box-shadow:inset 0 0 8px rgba(152,191,13,0.5);
 }
 
-#top-menu li.linux > a:hover {
-  text-shadow:1px 1px 1px rgba(246,180,2,0.3);
+#top-menu li.linux:hover > a {
+  box-shadow:inset 0 0 8px rgba(246,180,2,0.5);
 }
 
-#top-menu li.windows > a:hover {
-  text-shadow:1px 1px 1px rgba(116,73,241,0.3);
+#top-menu li.windows:hover > a {
+  box-shadow:inset 0 0 8px rgba(116,73,241,0.5);
 }
 
-#top-menu li.others > a:hover {
-  text-shadow:1px 1px 1px rgba(177,71,163,0.3);
+#top-menu li.others:hover  > a {
+  box-shadow:inset 0 0 8px rgba(177,71,163,0.5);
 }
 
 #search {
@@ -159,7 +168,7 @@ body {
   color:#999;
   background-color:transparent;
   box-shadow:inset 0 0 8px rgba(255,255,255,0.75);
-  height:24px;
+  height:22px;
   border-radius:4px;
 }
 
@@ -182,7 +191,7 @@ body {
   font-size:14px;
   line-height:1.5;
   background-color:rgba(255,255,255,0.3);
-  height:24px;
+  height:22px;
   width:25%;
   color:#333;
   cursor:pointer;
@@ -264,8 +273,6 @@ body {
   color:blue;
   border-bottom:1px dashed #000;
 }
-
-
 
 #footer {
   height:95px; 
