@@ -24,7 +24,11 @@ body {
 
 
 #header #logo {
+  width:20%;
+  padding-right:5%;
   float:left;
+  margin-right:-1px;
+  border-right:1px dashed #ddd;
 }
 
 #header #logo a {
@@ -34,6 +38,7 @@ body {
   font-size:24px;
   line-height:32px;
   color:#333;
+  text-shadow:1px 1px 1px rgba(255,255,255,1);
   background:url(../images/logo.png) no-repeat -5px center;
 }
 
@@ -41,9 +46,104 @@ body {
   box-shadow:inset 0 0 8px rgba(239,121,1,0.5);
 }
 
+#top-menu {
+  width:50%;
+  float:left;
+  list-style:none;
+}
+
+#top-menu > li{
+  border-left:1px dashed #666;
+  border-right:1px dashed #ddd;
+  width:20%;
+  margin-left:-1px;
+  margin-right:-1px;
+  float:left;
+  font-size:18px;
+  line-height:32px;
+  position:relative;
+}
+
+#top-menu li.last {
+  border-right:1px dashed #666;
+}
+
+#top-menu  li > a {
+  color:#333;
+  display:block;
+  text-align:center;
+  vertical-align:bottom;
+}
+
+#top-menu li:hover {
+  background-color:rgba(255,255,255,0.1);
+}
+
+#top-menu li .submenu {
+  border-top:8px solid transparent;
+  list-style:none;
+  display:none;
+  width:300%;
+  position:absolute;
+  top:32px;
+  margin-left:-100%;
+  background-image:url(../images/bglines.png);
+}
+
+#top-menu li:hover .submenu {
+  display:block;
+}
+
+#top-menu li .submenu li {
+  width:33.3%;
+  float:left;
+}
+
+#top-menu li.front > a {
+  text-shadow:1px 1px 1px rgba(213,68,33,0.3);
+}
+
+#top-menu li.server > a {
+  text-shadow:1px 1px 1px rgba(152,191,13,0.3);
+}
+
+#top-menu li.linux > a {
+  text-shadow:1px 1px 1px rgba(246,180,2,0.3);
+}
+
+#top-menu li.windows > a {
+  text-shadow:1px 1px 1px rgba(116,73,241,0.3);
+}
+
+#top-menu li.others > a {
+  text-shadow:1px 1px 1px rgba(177,71,163,0.3);
+}
+
+#top-menu li.front:hover > a {
+  box-shadow:inset 0 0 8px rgba(213,68,33,0.3);
+}
+
+#top-menu li.server > a:hover {
+  text-shadow:1px 1px 1px rgba(152,191,13,0.3);
+}
+
+#top-menu li.linux > a:hover {
+  text-shadow:1px 1px 1px rgba(246,180,2,0.3);
+}
+
+#top-menu li.windows > a:hover {
+  text-shadow:1px 1px 1px rgba(116,73,241,0.3);
+}
+
+#top-menu li.others > a:hover {
+  text-shadow:1px 1px 1px rgba(177,71,163,0.3);
+}
+
 #search {
   width:20%;
-  float:right;
+  margin-left:5%;
+  margin-right:-5%;
+  float:left;
 }
 
 #search form {
@@ -60,11 +160,17 @@ body {
   background-color:transparent;
   box-shadow:inset 0 0 8px rgba(255,255,255,0.75);
   height:24px;
+  border-radius:4px;
+}
+
+#search .search-box:hover {
+  border:1px solid #666;
 }
 
 #search .search-box:focus {
-  border:1px solid #666;
   color:#333;
+  border:1px solid #666;
+  outline:none;
   box-shadow:inset 0 0 8px rgba(0,0,0,0.3);
   background:rgba(255,255,255,0.3);
 }
@@ -75,54 +181,15 @@ body {
   margin:4px 0 0;
   font-size:14px;
   line-height:1.5;
-  background-color:transparent;
+  background-color:rgba(255,255,255,0.3);
   height:24px;
   width:25%;
-  color:#666;
+  color:#333;
   cursor:pointer;
 }
 
-#top-menu {
-  width:50%;
-  float:right;
-  list-style:none;
-}
+#search .search-btn:hover {
 
-#top-menu li{
-  width:20%;
-  float:left;
-  font-size:18px;
-  line-height:32px;
-  position:relative;
-}
-
-#top-menu  li a {
-  display:block;
-  text-align:center;
-  vertical-align:bottom;
-}
-
-#top-menu li:hover {
-  background-color:#abc;
-}
-
-#top-menu li .submenu {
-  border-top:8px solid transparent;
-  list-style:none;
-  display:none;
-  width:300%;
-  position:absolute;
-  top:32px;
-  margin-left:-100%;
-}
-
-#top-menu li:hover .submenu {
-  display:block;
-}
-
-#top-menu li .submenu li {
-  width:33.3%;
-  background:rgba(255,0,0,1);
 }
 
 #wrapper {
@@ -155,8 +222,9 @@ body {
 #msg {
   height:26px;
   margin:8px -8px 16px 24px;
-  box-shadow:0 0 8px rgba(0,0,0,0.3),0 0 4px rgba(255,255,255,0.5);
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
   border:2px solid #ccc;
+  border-radius:8px;
 }
 
 #bread-crumb {
