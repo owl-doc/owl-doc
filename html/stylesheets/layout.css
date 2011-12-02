@@ -84,7 +84,11 @@ body {
 }
 
 #top-menu li .submenu {
-  border:8px solid transparent;
+  border-top:7px solid transparent;
+  border-left:1px solid #eee;
+  border-bottom:1px solid #eee;
+  border-right:1px solid #eee;
+  padding:0 7px 7px;
   list-style:none;
   display:none;
   width:300%;
@@ -93,7 +97,7 @@ body {
   border-radius:0 0 8px 8px;
   margin-left:-100%;
   background-clip:padding-box;
-  background-image:url();
+  background-image:url(../images/bglines.png);
   box-shadow:-4px 4px 8px -4px rgba(239,121,1,0.5),4px 4px 8px -4px rgba(239,121,1,0.5);
 
 }
@@ -103,9 +107,13 @@ body {
 }
 
 #top-menu li .submenu li {
-  width:33.3%;
+  width:33.33%;
   float:left;
-  background-color:rgba(0,0,255,0.3);
+  background-color:rgba(0,0,255,0.1);
+}
+
+#top-menu li .submenu li:hover {
+  background-color:rgba(0,0,255,0.2)
 }
 
 #top-menu li.front > a {
