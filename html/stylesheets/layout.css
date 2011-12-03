@@ -22,8 +22,6 @@ body {
   padding:7px;
   background-clip:content-box;
   background-color:rgba(0,0,255,0.1);
-  position:relative;
-  z-index:2;
 }
 
 
@@ -56,14 +54,14 @@ body {
   list-style:none;
 }
 
-#top-menu > li{
+#top-menu > li {
   border-left:1px dashed #666;
   border-right:1px dashed #ddd;
   width:20%;
   margin-left:-1px;
   margin-right:-1px;
   float:left;
-  font-size:18px;
+  font-size:16px;
   line-height:32px;
   position:relative;
 }
@@ -76,15 +74,17 @@ body {
   color:#333;
   display:block;
   text-align:center;
-  vertical-align:bottom;
 }
 
-#top-menu li:hover {
-  background-color:rgba(255,255,255,0.1);
+#top-menu > li >a:hover {
+  background-color:rgba(255,255,255,0.05);
+  text-decoration:underline;
+  font-size:18px;
 }
+
 
 #top-menu li .submenu {
-  border-top:7px solid transparent;
+  border-top:9px solid transparent;
   border-left:1px solid #eee;
   border-bottom:1px solid #eee;
   border-right:1px solid #eee;
@@ -94,9 +94,9 @@ body {
   width:300%;
   position:absolute;
   top:32px;
+  left:-8px;
   border-radius:0 0 8px 8px;
   margin-left:-100%;
-  background-clip:padding-box;
   background-image:url(../images/bglines.png);
   box-shadow:-4px 4px 8px -4px rgba(239,121,1,0.5),4px 4px 8px -4px rgba(239,121,1,0.5);
 
@@ -106,13 +106,13 @@ body {
   display:block;
 }
 
-#top-menu li .submenu li {
+#top-menu li ul.submenu li {
   width:33.33%;
   float:left;
-  background-color:rgba(0,0,255,0.1);
+  background-color:rgba(0,0,255,0.1)
 }
 
-#top-menu li .submenu li:hover {
+#top-menu li ul.submenu li:hover {
   background-color:rgba(0,0,255,0.2)
 }
 
@@ -211,24 +211,23 @@ body {
 
 #wrapper {
   width:90%;
-  min-width:980px;
   margin:0 auto 20px;
 }
 
 #left-column {
   width:25%;
   margin:0 -8px;
-  min-height:900px;
-  background-image:url(../images/aside_bg.png);
+  _background-image:url(../images/aside_bg.png);
+  background-color:rgba(255,255,255,0.5);
   border:8px solid transparent;
   box-shadow:0 0 8px rgba(0,0,0,0.15);
   background-clip:padding-box;
   float:left;
+  min-height:500px;
 }
 
 #right-column {
   width:75%;
-  min-height:900px;
   margin-right:-5px;
   float:left;
 }
@@ -239,8 +238,8 @@ body {
 #msg {
   height:26px;
   margin:8px -8px 16px 24px;
-  box-shadow:0 0 8px rgba(0,0,0,0.3);
-  border:2px solid #ccc;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.2);
+  border:1px solid #ddd;
   border-radius:8px;
 }
 
@@ -270,7 +269,6 @@ body {
 }
 
 #article {
-  min-height:860px;
   padding:20px;
 }
 

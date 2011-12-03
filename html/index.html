@@ -10,7 +10,13 @@
 <script type="text/javascript" src="javascript/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
-  $("#left-column");
+  var left_height=$("#left-column").height();
+  var right_height=$("#content").height();
+  if(left_height>right_height){
+    $("#content").css("height",left_height+"px");
+  }else{
+    $("#left-column").css("height",right_height+"px");
+  }
 });
 </script>
 </head>
